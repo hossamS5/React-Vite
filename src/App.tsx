@@ -7,6 +7,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   console.log('hossam');
+  console.log('hossam2');
 
   return (
     <>
