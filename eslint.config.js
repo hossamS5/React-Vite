@@ -14,7 +14,6 @@ export default [
     rules: {
       '@typescript-eslint/explicit-function-return-type': 'error',
       '@typescript-eslint/explicit-module-boundary-types': 'error',
-
       'no-console': 'error',
       'no-empty': ['error', { allowEmptyCatch: true }],
       'prefer-const': 1,
@@ -62,19 +61,8 @@ export default [
     files: ['**/*.{ts,tsx}'],
     plugins: { import: eslintPluginImport },
     rules: {
-      'import/no-unresolved': 'error',
       'import/prefer-default-export': 0,
       'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
-      'import/extensions': [
-        'error',
-        'always',
-        {
-          js: 'never',
-          jsx: 'never',
-          ts: 'never',
-          tsx: 'never',
-        },
-      ],
       'import/order': [
         'error',
         {
