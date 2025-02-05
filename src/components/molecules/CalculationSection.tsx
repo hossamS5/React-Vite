@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 
-const CalculationSection: React.FC = () => {
+interface IProps {
+  defaultName: 'Hossam';
+}
+
+const CalculationSection: React.FC<IProps> = ({ defaultName }) => {
   const [count, setCount] = useState<number>(0);
-  const [name, setname] = useState<string>('Hossam');
+  const [name, setname] = useState<string>(defaultName);
 
   return (
     <section className="flex flex-col items-start justify-center gap-6 py-6">

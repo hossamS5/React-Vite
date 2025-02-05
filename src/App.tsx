@@ -12,7 +12,7 @@ const App: React.FC = () => {
     <div className="w-full h-full">
       <Nav />
       <Suspense fallback="loading...">
-        <CalculationSection />
+        <CalculationSection defaultName="Hossam" />
       </Suspense>
     </div>
   );
